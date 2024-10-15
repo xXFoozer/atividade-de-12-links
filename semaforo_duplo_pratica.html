@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sinaleiros</title>
+</head>
+<body>
+    
+    <nav>
+        <a href="./index.html">linguagem de programação de C++ ARDUINO/</a>
+        <a href="./semaforo_simples.html">Semaforo Simples/</a>
+        <a href="./semaforo_simples_pratica.html">Semaforo Simples na pratica/</a>
+        <a href="./semaforo_duplo.html">Semaforo Duplo/</a>
+        <a href="./semaforo_duplo_pratica.html">Semaforo Duplo na pratica/</a>
+        <a href="./contador_crescente.html">Contador Crescente/</a>
+        <a href="./contador_decrescente.html">Contador Decrescente/</a>
+        <a href="./contador_decrescente_com_semaforo.html">Contador Decrescente Com Semaforo</a>
+    </nav>
+    <br>
+    <h2>Foto montagem pratica</h2>
+    <br>
+    <img class="giga" src="./WhatsApp Image 2024-10-10 at 16.55.30 (1).jpeg" alt="Imagem_do_circuito_pratica">
+    <br>
+    <div class="video">
+      <iframe width="362" height="643" src="https://www.youtube.com/embed/TXFmXmtB3i8" title="Projeto semáforo duplo com led" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <br>
+    <h2>Código IDE Arduino</h2>
+    <br>
+    <img src="./ide_arduino.jpg" alt="ide_arduino">
+    <br>
+    <h2>Código em texto</h2>
+    <br>
+    <pre>// C++ code
+        //
+        void setup()
+        {
+          pinMode(8, OUTPUT);
+          pinMode(9, OUTPUT);
+          pinMode(10, OUTPUT);
+          pinMode(11, OUTPUT);
+          pinMode(12, OUTPUT);
+          pinMode(13, OUTPUT);
+        }
+        
+        void loop()
+        {
+          digitalWrite(8, HIGH);
+          digitalWrite(9, LOW);
+          digitalWrite(10, LOW);
+          digitalWrite(11, LOW);
+          digitalWrite(12, LOW);
+          digitalWrite(13, HIGH);
+          delay(7000); // Wait for 7000 millisecond(s)
+          digitalWrite(8, HIGH);
+          digitalWrite(9, LOW);
+          digitalWrite(10, LOW);
+          digitalWrite(11, LOW);
+          digitalWrite(12, HIGH);
+          digitalWrite(13, LOW);
+          delay(2000); // Wait for 2000 millisecond(s)
+          digitalWrite(8, LOW);
+          digitalWrite(9, LOW);
+          digitalWrite(10, HIGH);
+          digitalWrite(11, HIGH);
+          digitalWrite(12, LOW);
+          digitalWrite(13, LOW);
+          delay(7000); // Wait for 7000 millisecond(s)
+          digitalWrite(8, LOW);
+          digitalWrite(9, HIGH);
+          digitalWrite(10, LOW);
+          digitalWrite(11, HIGH);
+          digitalWrite(12, LOW);
+          digitalWrite(13, LOW);
+          delay(2000); // Wait for 2000 millisecond(s)
+          delay(1); // Wait for 1 millisecond(s)
+        }</pre>
+</body>
+</html>

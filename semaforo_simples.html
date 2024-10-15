@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sinaleiros</title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">linguagem de programação de C++ ARDUINO/</a>
+        <a href="./semaforo_simples.html">Semaforo Simples/</a>
+        <a href="./semaforo_simples_pratica.html">Semaforo Simples na pratica/</a>
+        <a href="./semaforo_duplo.html">Semaforo Duplo/</a>
+        <a href="./semaforo_duplo_pratica.html">Semaforo Duplo na pratica/</a>
+        <a href="./contador_crescente.html">Contador Crescente/</a>
+        <a href="./contador_decrescente.html">Contador Decrescente/</a>
+        <a href="./contador_decrescente_com_semaforo.html">Contador Decrescente Com Semaforo</a>
+    </nav>
+    <br>
+   <h2>Imagem do circuito do projeto de semaforo simples</h2>
+   <br>
+   <img src="./tinkercad_simples.jpg" alt="Imagem_do_circuito"><small> Fonte: <a href="https://www.tinkercad.com/things/37MNY9WjJea-amazing-uusam-albar/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a></small>
+   <br>
+   <h2>Imagem da programação em diagrama de blocos do projeto acima</h2>
+   <br>
+   <img src="./blocos_exemplo.jpg" alt="Imagem_da_programacao_bloco"><small>Fonte: <a href="https://www.tinkercad.com/things/37MNY9WjJea-amazing-uusam-albar/editel?returnTo=https%3A%2F%2Fwww.tinkercad.com%2Fdashboard%2Fdesigns%2Fcircuits">Tinkercad</a> </small>
+   <br>
+   <h2>Código em texto</h2>
+   <br>
+   <pre>int validador = 0;
+
+    void setup()
+    {
+      pinMode(12, OUTPUT);
+      pinMode(4, OUTPUT);
+      pinMode(8, OUTPUT);
+      pinMode(0, OUTPUT);
+    
+      validador = 0;
+    }
+    
+    void loop()
+    {
+      while (!(validador == 2)) {
+        digitalWrite(12, HIGH);
+        delay(9000); // Wait for 9000 millisecond(s)
+        digitalWrite(12, LOW);
+        digitalWrite(4, HIGH);
+        delay(7000); // Wait for 7000 millisecond(s)
+        digitalWrite(4, LOW);
+        digitalWrite(8, HIGH);
+        delay(2000); // Wait for 2000 millisecond(s)
+        digitalWrite(8, LOW);
+        validador += 1;
+      }
+      digitalWrite(8, HIGH);
+      delay(1000); // Wait for 1000 millisecond(s)
+      digitalWrite(8, LOW);
+      delay(1000); // Wait for 1000 millisecond(s)
+      digitalWrite(0, HIGH);
+      delay(1); // Wait for 1 millisecond(s)
+    }</pre>
+</body>
+</html>
